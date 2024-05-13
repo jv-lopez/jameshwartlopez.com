@@ -4,6 +4,7 @@ export const siteConfig = {
   ogImage: "https://ui.shadcn.com/og.jpg",
   description:
     "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
+  email: "me@jameshwartlopez.com",
   links: {
     twitter: "https://twitter.com/jameshwartlopez",
     github: "https://github.com/jv-lopez",
