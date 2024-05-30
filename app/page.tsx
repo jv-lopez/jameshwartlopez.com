@@ -14,6 +14,7 @@ export default function Home() {
           src={profile}
           height={250}
           width={250}
+          priority
           alt="Jameshwart Lopez profile"
           className="rounded-full my-3"
         />
