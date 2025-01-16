@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { parse } from "@wordpress/block-serialization-default-parser";
 import { useState } from "react";
+import { toast } from "sonner";
 
 export default function GutenbergParser() {
   const [inputText, setInputText] = useState<string>("");
@@ -24,9 +25,11 @@ export default function GutenbergParser() {
     if (parsedJSON) {
       try {
         await navigator.clipboard.writeText(parsedJSON);
+        toast.success("Copied to clipboard!");
         setCopySuccess("Copied to clipboard!");
       } catch (error) {
         setCopySuccess("Failed to copy!");
+        toast.success("Failed to copy!");
       }
     }
   };
